@@ -1,24 +1,27 @@
-<h1>Burgers!</h1>
+<div class="icon">
 
-<h2>Burgers that are not devoured!</h2>
+</div>
+<h1>Eat Da Burgers!</h1>
 
-<ul>
+<h2>Your Goals!</h2>
+
+<ol>
     {{#each burgers}}
         {{#unless devoured}}
             {{>burgers/burger-block devour=true}}
         {{/unless}}
     {{/each}}
-</ul>
+</ol>
 
-<h2>Burgers that are devoured!</h2>
+<h2>Your Accomplishments!</h2>
 
-<ul>
+<ol>
     {{#each burgers}}
         {{#if devoured}}
             {{>burgers/burger-block devour=false}}
         {{/if}}
     {{/each}}
-</ul>
+</ol>
 
 <h2>Add a Burger</h2>
 
